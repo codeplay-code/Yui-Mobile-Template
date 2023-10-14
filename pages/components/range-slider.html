@@ -1,0 +1,87 @@
+<div class="page" data-name="range-slider">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon f7-icons arrow-back">arrow_left</i>
+        </a>
+      </div>
+      <div class="title">Range Slider</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="light-gray-title">Default</div>
+    <div class="list simple-list list-outline list-dividers full-width">
+      <ul>
+        <li>
+          <div class="range-slider range-slider-init" data-label="true">
+            <input type="range" min="0" max="100" step="1" value="10">
+          </div>
+        </li>
+        <li>
+          <div class="range-slider range-slider-init" data-label="true">
+            <input type="range" min="0" max="100" step="1" value="50">
+          </div>
+        </li>
+        <li>
+          <div class="range-slider range-slider-init" data-label="true">
+            <input type="range" min="0" max="100" step="1" value="75">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="light-gray-title">With Icons</div>
+    <div class="list simple-list list-outline full-width">
+      <ul>
+        <li>
+          <div>
+            <i class="icon f7-icons">sun_min</i>
+          </div>
+          <div class="range-slider-with-icons">
+            <div class="range-slider range-slider-init color-orange" data-label="true">
+              <input type="range" min="0" max="100" step="1" value="50">
+            </div>
+          </div>
+          <div>
+            <i class="icon f7-icons">sun_max_fill</i>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="light-gray-title range-slider-title-value">
+      Age Filter
+      <span class="range-value age-value">25 - 40</span>
+    </div>
+    <div class="list simple-list list-outline full-width">
+      <ul>
+        <li>
+          <div id="age-filter" class="range-slider range-slider-init" data-label="true" data-dual="true" data-min="18"
+            data-max="60" data-step="1" data-value-left="25" data-value-right="40"></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="light-gray-title range-slider-title-value">
+      Price Filter
+      <span class="range-value price-value">$200 - $400</span>
+    </div>
+    <div class="list simple-list list-outline full-width">
+      <ul>
+        <li class="item-row">
+          <div>
+            <i class="icon f7-icons">money_dollar_circle</i>
+          </div>
+          <div class="range-slider-with-icons">
+            <div id="price-filter" class="range-slider range-slider-init color-green" data-label="true" data-dual="true"
+              data-min="0" data-max="500" data-step="1" data-value-left="200" data-value-right="400"></div>
+          </div>
+          <div>
+            <i class="icon f7-icons">money_dollar_circle_fill</i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

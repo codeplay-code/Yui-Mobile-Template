@@ -1,0 +1,101 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon f7-icons arrow-back">arrow_left</i>
+        </a>
+      </div>
+      <div class="title">Create Post</div>
+      <div class="right">
+        <a href="#" class="link">Save</a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="create-post-cover">
+      <input type="file" name="cover" id="cover">
+      <i class="icon f7-icons">photo</i>
+      <div>Add a cover image...</div>
+    </div>
+    <div class="light-gray-title">Title</div>
+    <input type="text" id="title" name="title" placeholder="Choose a title">
+    <div class="light-gray-title">Content</div>
+    <div class="text-editor text-editor-init" data-placeholder="Write some content..."
+      data-buttons='[["bold", "italic", "underline"],["unorderedList", "link", "image"],["h1", "h2"],["alignLeft", "alignCenter",  "alignJustify"]]'>
+      <div class="text-editor-content" contenteditable></div>
+    </div>
+    <div class="light-gray-title">Categories</div>
+    <div class="list list-outline list-dividers full-width">
+      <ul>
+        <li>
+          <label class="item-checkbox item-content">
+            <input type="checkbox" name="demo-checkbox" value="Books" checked="checked">
+            <i class="icon icon-checkbox"></i>
+            <div class="item-inner">
+              <div class="item-title">Photography</div>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class="item-checkbox item-content">
+            <input type="checkbox" name="demo-checkbox" value="Movies">
+            <i class="icon icon-checkbox"></i>
+            <div class="item-inner">
+              <div class="item-title">Technology</div>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class="item-checkbox item-content">
+            <input type="checkbox" name="demo-checkbox" value="Food" checked="checked">
+            <i class="icon icon-checkbox"></i>
+            <div class="item-inner">
+              <div class="item-title">Politics</div>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class="item-checkbox item-content">
+            <input type="checkbox" name="demo-checkbox" value="Drinks" checked="checked">
+            <i class="icon icon-checkbox"></i>
+            <div class="item-inner">
+              <div class="item-title">Philosophy</div>
+            </div>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="light-gray-title">Tags</div>
+    <input type="text" id="tags" name="tags" placeholder="Separated by a comma">
+    <div class="light-gray-title">Options</div>
+    <div class="list list-outline list-dividers full-width">
+      <ul>
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title">Publish As Private</div>
+            <div class="item-after">
+              <label class="toggle toggle-init">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title">Allow Comments</div>
+            <div class="item-after">
+              <label class="toggle toggle-init">
+                <input type="checkbox" checked>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <a href="#" class="button button-fill button-round color-dark">Publish</a>
+  </div>
+</div>

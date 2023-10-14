@@ -1,0 +1,970 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yui Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/vue.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="ready sticky">
+    <main>
+      <aside class="sidebar">
+        <h1 class="app-name"><a class="app-name-link" data-nosearch="" href="/Projects/Docsify/docs/">Yui Docs</a></h1>
+        <div class="sidebar-nav">
+          <ul>
+            <li><a class="section-link" href="#getting-started" title="Getting started">Getting started</a></li>
+            <ul>
+              <li><a class="section-link" href="#requirements-amp-environment"
+                  title="Requirements &amp; Environment">Requirements &amp; Environment</a></li>
+            </ul>
+            <li><a class="section-link" href="#the-files" title="The files">The files</a></li>
+            <ul>
+              <li><a class="section-link" href="#html" title="HTML">HTML</a></li>
+              <li><a class="section-link" href="#css" title="CSS">CSS</a></li>
+              <li><a class="section-link" href="#js" title="JS">JS</a></li>
+              <li><a class="section-link" href="#fonts" title="Fonts">Fonts</a></li>
+              <li><a class="section-link" href="#images" title="Images">Images</a></li>
+              <li><a class="section-link" href="#pages" title="Pages">Pages</a></li>
+            </ul>
+            <li><a class="section-link" href="#how-it-works" title="How It Works">How It Works</a></li>
+            <ul>
+              <li><a class="section-link" href="#understand-the-layout" title="Understand the layout">Understand the
+                  layout</a></li>
+              <li><a class="section-link" href="#links" title="Links">Links & Pages</a></li>
+              <li><a class="section-link" href="#add-additional-pages" title="Add additional pages">Add additional
+                  pages</a></li>
+            </ul>
+            <li><a class="section-link" href="#pcf" title="Pages, Components & Features">Pages, Components &
+                Features</a></li>
+            <ul>
+              <li><a class="section-link" href="#pages2" title="Pages">Pages</a></li>
+              <li><a class="section-link" href="#components" title="Components">Components</a></li>
+              <li><a class="section-link" href="#features" title="Features">Features</a></li>
+            </ul>
+            <li><a class="section-link" href="#quick-customization" title="Quick Customization">Quick Customization</a>
+            </li>
+            <ul>
+              <li><a class="section-link" href="#color-themes" title="Color Themes">Color Themes</a></li>
+              <li><a class="section-link" href="#dark-mode" title="Dark Mode">Dark Mode</a></li>
+              <li><a class="section-link" href="#icons" title="Icons">Icons</a></li>
+              <li><a class="section-link" href="#rtl-layout" title="RTL Layout">RTL Layout</a></li>
+            </ul>
+            <li><a class="section-link" href="#fetch-data" title="Possible uses">Fetch Data</a></li>
+            <ul>
+              <li><a class="section-link" href="#fetch-app" title="Fetch on app">On app opening</a></li>
+              <li><a class="section-link" href="#fetch-page" title="Fetch on page">On aspecific page</a></li>
+            </ul>
+            <li><a class="section-link" href="#possible-uses" title="Possible uses">Use cases</a></li>
+            <ul>
+              <li><a class="section-link" href="#mobile-website" title="Mobile website">Mobile website</a></li>
+              <li><a class="section-link" href="#pwa" title="PWA">PWA</a></li>
+              <li><a class="section-link" href="#native-app-cordova" title="Native App (Cordova)">Native App
+                  (Cordova)</a></li>
+            </ul>
+            <li><a class="section-link" href="#whats-next-" title="What’s next ?">What’s next ?</a></li>
+            <ul>
+              <li><a class="section-link" href="#support" title="Support">Support</a></li>
+              <li><a class="section-link" href="#leave-review" title="Leave review">Leave a Review</a></li>
+            </ul>
+          </ul>
+        </div>
+      </aside>
+      <section class="content">
+        <article class="markdown-section" id="main">
+          <h1 id="getting-started">
+            <a href="#getting-started" data-id="getting-started" class="anchor"><span>Getting started</span></a>
+          </h1>
+          <p>Thank you for purchasing Yui on ThemeForest! The documentation will help you to understand and set up the
+            template.</p>
+          <h2 id="requirements-amp-environment">
+            <a href="#requirements-amp-environment" data-id="requirements-amp-environment"
+              class="anchor"><span>Requirements &amp; Environment</span></a>
+          </h2>
+          <p>
+            Since
+            <strong>Yui</strong>
+            uses AJAX to manage transitions between pages, you need to put the template on a web server to make it work
+            properly.
+          </p>
+          <p>It can be :</p>
+          <ul>
+            <li>
+              On a local web server, like
+              <a href="http://www.wampserver.com/" target="_blank" rel="noopener">WAMP</a>
+              on Windows, or
+              <a href="https://www.mamp.info/en/" target="_blank" rel="noopener">MAMP</a>
+              on macOS
+            </li>
+            <li>On a web hosting, as for a standard website</li>
+            <li>On a Cordova app, which acts as a web server</li>
+          </ul>
+          <p>Once you have put one the template on a web server, you can open it in your browser and start working on
+            it.</p>
+          <p class="warn">
+            To simulate the result on a mobile device, I advise you to use the
+            <strong>emulation Mode</strong>
+            available on most browsers. You can also use an extension like
+            <a href="https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk"
+              target="”_blank”">Mobile Simulator</a>
+            on Chrome.
+          </p>
+          <p>Or you can simply resize your browser window to the dimensions of a mobile device.</p>
+          <p>Don't forget to clear your cache after editing files, or the browser may not recognize the changes. I
+            advise you to disable it completely if you are in a development environment.</p>
+          <p>Now you are ready to edit the template!</p>
+          <h1 id="the-files">
+            <a href="#the-files" data-id="the-files" class="anchor"><span>The files</span></a>
+          </h1>
+          <p>The template include all these files:</p>
+          <p><img src="assets/img/files.jpg" data-origin="img/files.png" alt="Files" width="800"
+              class="medium-zoom-image" /></p>
+          <h2 id="html">
+            <a href="#html" data-id="html" class="anchor"><span>HTML</span></a>
+          </h2>
+          <p>
+            <code>index.html</code>
+            is the main file. All the structure (tabs etc.) and the content you see when you open the template can be
+            found here.
+          </p>
+          <h2 id="css">
+            <a href="#css" data-id="css" class="anchor"><span>CSS</span></a>
+          </h2>
+          <p>
+            The
+            <code>css</code>
+            folder contains 3 CSS files.
+          </p>
+          <p>
+            <code>framework7-bundle.css</code>
+            is the Framework7 style file, you do not need to modify it.
+          </p>
+          <p>
+            <code>framework7-bundle-rtl.css</code>
+            is the Framework7 style file for the layout of RTL languages (such as Arabic or Hebrew). If you don't need
+            RTL layout, you can remove this file. If you need RTL layout, please refer to the <a href="#rtl-layout">RTL
+              Layout</a> section.
+          </p>
+          <p>
+            <code>framework7-icons.css</code>
+            is the Framework7 icons style file, you do not need to modify it.
+          </p>
+          <p>
+            <code>style.css</code>
+            is the app CSS file. You can do your style modifications here. It contains all of the specific stylings for
+            the template. The file is separated into sections using :
+          </p>
+          <pre v-pre="" data-lang="css"><code class="lang-css"><span class="token comment">/* 1. Fonts */</span>
+
+<span class="token comment">/* some code */</span>
+
+<span class="token comment">/* 2. Root Variables */</span>
+
+<span class="token comment">/* some code */</span>
+
+<span class="token comment">/* 3. General */</span>
+
+<span class="token comment">/* some code */</span>
+
+<span class="token comment">/* 4. Navbar */</span>
+
+<span class="token comment">/* some code */</span>
+
+<span class="token comment">/* etc. */</span></code></pre>
+          <p>
+            If you want to edit a specific section of the app, simply find the appropriate label in the CSS file, and
+            then scroll down until you find the appropriate style that needs to be edited. Note that the
+            <code>style.css</code>
+            file contains a
+            <strong>[Table of contents]</strong>
+            at the top.
+          </p>
+          <h2 id="js">
+            <a href="#js" data-id="js" class="anchor"><span>JS</span></a>
+          </h2>
+          <p>The js folder contains two JavaScript files.</p>
+          <p>
+            <code>framework7-bundle.js</code>
+            is the Framework7 library. The template uses
+            <a href="https://framework7.io/docs/" target="_blank" rel="noopener">Framework7 V8</a>
+            , a mobile library that manages router &amp; transitions. You don't have to modify this file.
+          </p>
+          <p>
+            <code>app.js</code>
+            is the app script. It contains the app configuration and all the functions needed for certain features (like
+            infinite scroll, pull-to-refresh etc.) and each function is commented so that you understand what it is
+            about.
+          </p>
+          <p>
+            If you want to add your own custom features, you can do it in this file using native JavaScript or the
+            <a href="https://framework7.io/docs/dom7" target="_blank">Framwork7 library</a>
+            .
+          </p>
+          <h2 id="fonts">
+            <a href="#fonts" data-id="fonts" class="anchor"><span>Fonts</span></a>
+          </h2>
+          <p>The fonts folder contains 2 different fonts.</p>
+          <p>
+            <code>Framework7Icons</code>
+            is the Framework7 icons font. You can find a list of all available icons
+            <a href="https://framework7.io/icons/" target="_blank">here</a>
+            .
+          </p>
+          <p>
+            <code>Rubik</code>
+            is a font that comes from Google Fonts. You can find it
+            <a href="https://fonts.google.com/specimen/Rubik" target="_blank">here</a>
+          </p>
+          <h2 id="images">
+            <a href="#images" data-id="images" class="anchor"><span>Images</span></a>
+          </h2>
+          <p>
+            The
+            <code>images</code>
+            folder contains all the placeholder images displayed throughout the application. They are separated into
+            subfolders so you can easily understand which images are used where.
+          </p>
+          <p>Each placeholder image has a specific resolution, I advice you to use this resolution for the best
+            performance (high quality on retina devices) and optimization (not unnecessarily oversized).</p>
+          <h2 id="pages">
+            <a href="#pages" data-id="pages" class="anchor"><span>Pages</span></a>
+          </h2>
+          <p>
+            The
+            <code>pages</code>
+            folder contains all the additional pages. A page contains the content that is displayed when you click on a
+            link within the app and it transitions to another page.
+          </p>
+
+          <h1 id="how-it-works">
+            <a href="#how-it works" data-id="how-it-works" class="anchor"><span>How it works</span></a>
+          </h1>
+          <p>This section will help you understand the structure of the template.</p>
+          <p>
+            The template has several tabs, each tab is a view with its own navigation and history. This means you can
+            open several pages and go back independently on each tab, without changing the content of the other tabs,
+            just like native mobile
+            navigation.
+          </p>
+          <p>
+            The content of all the tabs is in the
+            <code>index.html</code>
+            file. And every additional page is located in the
+            <code>pages</code>
+            folder.
+          </p>
+          <p>The Tab Bar (at the bottom) is common for the entire app.</p>
+          <p>
+            The Nav Bar (at the top) is unique for each page, which means you can have a different title and additional
+            action icons for every page. The transitions of the pages and navbars are handled automatically by the
+            template.
+          </p>
+          <h2 id="understand-the-layout">
+            <a href="#understand-the-layout" data-id="understand-the-layout" class="anchor"><span>Understand the
+                layout</span></a>
+          </h2>
+          <p>
+            Below, the structure of
+            <code>index.html</code>
+          </p>
+          <p>
+            The
+            <code>&lt;body&gt;</code>
+            tag can have a class to apply the color of the desired theme. (See
+            <a href="#color-themes">how to change the theme color</a>
+            ). By default, it's the blue theme.
+          </p>
+          <p>
+            The
+            <code>&lt;div id="app"&gt;</code>
+            is the app wrapper.
+          </p>
+          <p>
+            The
+            <code>&lt;div class="panel"&gt;</code>
+            contains the app left panel.
+          </p>
+          <p>
+            The
+            <code>&lt;div class="views tabs"&gt;</code>
+            contains our differents views (tabs) and the tab bar. Inside this div, you can add other views (tabs) or
+            delete or edit the current ones.
+          </p>
+          <p>
+            Each view must have a unique id. The main view (the one that is displayed when you open the app) must have
+            the additional
+            <em>view-main</em>
+            and
+            <em>tab-active</em>
+            classes.
+          </p>
+          <p>
+            Inside each view, you have a
+            <code>&lt;div class="page"&gt;</code>
+            , and inside each page, you have the
+            <code>&lt;div class="navbar"&gt;</code>
+            that contains the navbar for the specific page, and the
+            <code>&lt;div class="page-content"&gt;</code>
+            that contains the HTML content of the page. You can copy and paste different elements and features from the
+            template here, or create your own content.
+          </p>
+          <p>
+            Concerning the tab bar at the bottom, each tab is a link having as href the id of the corresponding view.
+            Inside each link is the text and icon displayed in the tab bar (See
+            <a href="#icons">how to change the icons</a>
+            ).
+          </p>
+          <p>
+            Here is a clearer and simpler view of the structure of
+            <code>index.html</code>
+            :
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- ... --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>color-blue<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>panel<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Panel Content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>views tabs<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Tab 1 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>view view-init view-main tab tab-active<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Navbar content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Page content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Tab 2 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>view view-init tab<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Navbar content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Page content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Tab 3 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>view view-init tab<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Navbar content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Page content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Tab 4 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>view view-init tab<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Navbar content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Page content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Tab 5 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>view view-init tab<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Navbar content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- Page content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        
+        <span class="token comment">&lt;!-- Tab Bar --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>toolbar tabbar tabbar-icons toolbar-bottom<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>toolbar-inner<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#tab-1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-link tab-link-active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon f7-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>sparkles<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tabbar-label<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Discover<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#tab-2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-link<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon f7-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>rocket<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tabbar-label<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>News<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#tab-3<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-link<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon f7-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>doc_richtext<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tabbar-label<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Pages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#tab-4<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-link<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon f7-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>rectangle_on_rectangle_angled<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tabbar-label<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Components<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#tab-5<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-link<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon f7-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>layers_alt<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tabbar-label<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Features<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+          <h2 id="links">
+            <a href="#links" data-id="links" class="anchor"><span>Links & Pages</span></a>
+          </h2>
+          <p>To navigate between pages, you just need to use the standard link tag</p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/single/<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>link<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>My link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>
+            Where
+            <code>href</code>
+            is the path of the page in the routes array in
+            <code>app.js</code>
+            .
+          </p>
+          <p>
+            To return to the previous page, you have to add the
+            <code>back</code>
+            class to the link
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>link back<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Back link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>
+            If you want to open an external link (outisde the app), you have to add the
+            <code>external</code>
+            class to the link
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.google.com<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>link external<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>My page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>There is an exception for links that are inside the slides of a slider. In this case, the path should be
+            added in the data-href attribute.</p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">" <span class="token attr-name">data-href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/single/<span class="token punctuation">"</span></span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>My page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+          <h2 id="add-additional-pages">
+            <a href="#add-additional-pages" data-id="add-additional-pages" class="anchor"><span>Add additional
+                pages</span></a>
+          </h2>
+          <p>If you need to add custom additional pages, you can do it easily.</p>
+          <p>First, create a new HTML file with this structure :</p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar-bg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar-inner<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>left<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#t<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>link back<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon f7-icons arrow-back<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>arrow_left<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Page Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Page content --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>
+            And save it in the
+            <strong>pages</strong>
+            folder.
+          </p>
+          <p class="warn">
+            When you click on a link, the app load the page in Ajax and parse the file to get only the div who has the
+            <code>page</code>
+            class. This is why there is no need to include the whole HTML header.
+          </p>
+          <p>
+            Next, you have to add a new route for the page in
+            <code>app.js</code>
+            . Go to the routes section, and add one for your page :
+          </p>
+          <pre v-pre="" data-lang="javascript"><code class="lang-javascript">routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/action-sheet/'</span><span class="token punctuation">,</span>
+    url<span class="token operator">:</span> <span class="token string">'pages/features/action-sheet.html'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// all the routes ...</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/my-page/'</span><span class="token punctuation">,</span>
+    url<span class="token operator">:</span> <span class="token string">'pages/my-page.html'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span></code></pre>
+          <p>Then, if you want to open your page, you just have to create a link with the correct path, in our example :
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/my-page/<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>link<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>My page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>
+            You can now put anything you want inside the
+            <code>page-content</code>
+            div of your page, whether it is custom content, or any component that is included with the template.
+          </p>
+          <h1 id="pcf">
+            <a href="#pcf" data-id="pcf" class="anchor"><span>Pages, Components & Features</span></a>
+          </h1>
+          <p>Yui Mobile comes with a lot of pre-designed pages, features, and components that you can easily incorporate
+            into your app by simply copying and pasting them.</p>
+          <p>Most elements are static, or dynamic but with auto-initialization (for exemple the sliders), which means
+            you can copy/paste and edit them as you want without having to write a single line of Javascript. They will
+            work as-in.</p>
+          <h2 id="pages2">
+            <a href="#pages2" data-id="pages2" class="anchor"><span>Pages</span></a>
+          </h2>
+          <p>
+            If you need to use one of the pre-build pages in your app, find the corresponding path of the page in the
+            routes array of
+            <code>app.js</code>
+            , and put this path in the href attribute of any link in your app. If you need to edit the page, find the
+            appropriate html file in the
+            <code>pages/pages/</code>
+            folder, and edit the content as you wish.
+          </p>
+          <p>
+            If you want to display the content of a pre-build page directly in one of the tabs, simply copy the content
+            that is inside the
+            <code>&lt;div class="page-content"&gt;</code>
+            of the page, and paste it inside the
+            <code>&lt;div class="page-content"&gt;</code>
+            of the tab you want in the
+            <code>index.html</code>
+            file.
+          </p>
+          <p>
+            Exceptions: The Onboarding, Chat, and Calendar pages require some JavaScript to function properly. Depending
+            on your requirements, you may need to modify the code. You can locate it in the
+            <code>app.js</code>
+            file. Please refer to the [Table of contents] at the top of the file to find the relevant section.
+          </p>
+          <h2 id="components">
+            <a href="#components" data-id="components" class="anchor"><span>Components</span></a>
+          </h2>
+          <p>You can copy any of the pre-build components and paste them anywhere you want in your app. They can be
+            placed directly within the tabs or in one of your custom pages.</p>
+          <p>
+            All the components have been coded at a single level, which means you don't have to struggle to determine
+            where to paste them, they all go in the same div: in the
+            <code>&lt;div class="page-content"&gt;</code>
+            of the page.
+          </p>
+          <p>You can find the code of any component in its own page in the <code>pages/components/</code> folder</p>
+          <p>
+            Exceptions: The Picker, Preloader, and Range slider components require some JavaScript to function
+            correctly. Depending on your requirements, you may need to modify the code. You can locate it in the
+            <code>app.js</code>
+            file. Please refer to the [Table of contents] at the top of the file to find the relevant section.
+          </p>
+          <h2 id="features">
+            <a href="#features" data-id="features" class="anchor"><span>Features</span></a>
+          </h2>
+          <p>
+            Same as the components, most of the features will work as-in and you just need to copy/paste them anywhere
+            you want if you want to use them.
+          </p>
+          <p>The exceptions for which some Javascript code must be modified to suit your needs are: Dialog, Infinite
+            Scroll, Notification, Photo Browser, Pull To Refresh and Toasts. Again, refer to the [Table of content] at
+            the top of the <code>app.js</code> file to find the appropriate section. In most cases, the modifications
+            you will need to make will be fairly straightforward, such as making minor text edits to a toast, for
+            instance.</p>
+          <h1 id="quick-customization">
+            <a href="#quick-customization" data-id="quick-customization" class="anchor"><span>Quick
+                Customization</span></a>
+          </h1>
+          <p>This section will show you some tips to customize the template easily and quickly.</p>
+          <h2 id="color-themes">
+            <a href="#color-themes" data-id="color-themes" class="anchor"><span>Color Themes</span></a>
+          </h2>
+          <p>If you want, you can change the theme color of the app. This will change the color of the tab bar, links,
+            buttons etc.</p>
+          <p>
+            You just have to change the class color of the
+            <code>body</code>
+            tag in
+            <code>index.html</code>
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>color-blue<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>by the color of your choice among the 15 possible colours.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Hex code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>red</td>
+                <td>
+                  <div class="color" style="background: #ff3b30"></div>
+                </td>
+                <td><code>#ff3b30</code></td>
+              </tr>
+              <tr>
+                <td>green</td>
+                <td>
+                  <div class="color" style="background: #4cd964"></div>
+                </td>
+                <td><code>#4cd964</code></td>
+              </tr>
+              <tr>
+                <td>blue</td>
+                <td>
+                  <div class="color" style="background: #2196f3"></div>
+                </td>
+                <td><code>#2196f3</code></td>
+              </tr>
+              <tr>
+                <td>pink</td>
+                <td>
+                  <div class="color" style="background: #ff2d55"></div>
+                </td>
+                <td><code>#ff2d55</code></td>
+              </tr>
+              <tr>
+                <td>yellow</td>
+                <td>
+                  <div class="color" style="background: #ffcc00"></div>
+                </td>
+                <td><code>#ffcc00</code></td>
+              </tr>
+              <tr>
+                <td>orange</td>
+                <td>
+                  <div class="color" style="background: #ff9500"></div>
+                </td>
+                <td><code>#ff9500</code></td>
+              </tr>
+              <tr>
+                <td>purple</td>
+                <td>
+                  <div class="color" style="background: #9c27b0"></div>
+                </td>
+                <td><code>#9c27b0</code></td>
+              </tr>
+              <tr>
+                <td>deeppurple</td>
+                <td>
+                  <div class="color" style="background: #673ab7"></div>
+                </td>
+                <td><code>#673ab7</code></td>
+              </tr>
+              <tr>
+                <td>lightblue</td>
+                <td>
+                  <div class="color" style="background: #5ac8fa"></div>
+                </td>
+                <td><code>#5ac8fa</code></td>
+              </tr>
+              <tr>
+                <td>teal</td>
+                <td>
+                  <div class="color" style="background: #009688"></div>
+                </td>
+                <td><code>#009688</code></td>
+              </tr>
+              <tr>
+                <td>lime</td>
+                <td>
+                  <div class="color" style="background: #cddc39"></div>
+                </td>
+                <td><code>#cddc39</code></td>
+              </tr>
+              <tr>
+                <td>deeporange</td>
+                <td>
+                  <div class="color" style="background: #ff6b22"></div>
+                </td>
+                <td><code>#ff6b22</code></td>
+              </tr>
+              <tr>
+                <td>gray</td>
+                <td>
+                  <div class="color" style="background: #8e8e93"></div>
+                </td>
+                <td><code>#8e8e93</code></td>
+              </tr>
+              <tr>
+                <td>white</td>
+                <td>
+                  <div class="color" style="background: #ffffff"></div>
+                </td>
+                <td><code>#ffffff</code></td>
+              </tr>
+              <tr>
+                <td>black</td>
+                <td>
+                  <div class="color" style="background: #000000"></div>
+                </td>
+                <td><code>#000000</code></td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            For example, if you want the Red theme, replace the default
+            <code>color-blue</code>
+            by
+            <code>color-red</code>
+            .
+          </p>
+          <p><img src="assets/img/color-theme.jpg" data-origin="img/color-theme.jpg" alt="Colors" width="300"
+              class="medium-zoom-image" /></p>
+
+          <h2 id="dark-mode">
+            <a href="#dark-mode" data-id="dark-mode" class="anchor"><span>Dark Mode</span></a>
+          </h2>
+          <p>
+            To set up the Dark Mode, just add the
+            <code>dark</code>
+            class on the
+            <code>body</code>
+            tag in
+            <code>index.html</code>
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>You can also combine the Dark Mode with a color theme, for example Dark Mode + Green Theme</p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dark color-green<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p><img src="assets/img/dark-theme.jpg" data-origin="img/dark-theme.jpg" alt="Colors" width="300"
+              class="medium-zoom-image" /></p>
+          <h2 id="icons">
+            <a href="#icons" data-id="icons" class="anchor"><span>Icons</span></a>
+          </h2>
+          <p>
+            Yui comes with
+            <a href="https://framework7.io/icons/" target="_blank" rel="noopener">Framework7 Icons</a>
+            , a beautiful icons font with a lot of original iOS icons.
+          </p>
+          <p><img src="assets/img/icons.png" data-origin="img/icons.png" alt="Icons" class="medium-zoom-image" /></p>
+          <p>An icon has this code :</p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon f7-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>icon_name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>
+            So to replace an icon (for example in the Tab Bar), or add a new one, go
+            <a href="https://framework7.io/icons/" target="_blank" rel="noopener">here</a>
+            to see the icon list, get the name of the icon of your choice, and then just put the icon name inside the
+            <code>&lt;i&gt;</code>
+            tag.
+          </p>
+          <p>
+            For example if you want a star :
+            <code>&lt;i class="f7-icons"&gt;star&lt;/i&gt;</code>
+            .
+          </p>
+          <h2 id="rtl-layout">
+            <a href="#rtl-layout" data-id="rtl-layout" class="anchor"><span>RTL Layout</span></a>
+          </h2>
+          <p>
+            If your target audience includes Right-To-Left language readers, it's essential to adapt your app's layout
+            accordingly. This section will show you how to quickly and easily implement an RTL (Right-To-Left) layout to
+            ensure an optimal user experience for languages like Arabic or Hebrew.
+          </p>
+          <p>First, open the <code>index.html</code> file and at the top of the document, add a <code>dir="rtl"</code>
+            attribute to the html tag,
+            like below:</p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">dir</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rtl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>Then, in the <code>head</code> section of <code>index.html</code>, replace:</p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>css/framework7-bundle.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>by:</p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>css/framework7-bundle-rtl.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p>And that's it, the template will now use a Right-To-Left layout.</p>
+          <h1 id="fetch-data">
+            <a href="#fetch-data" data-id="fetch-data" class="anchor"><span>Fetch Data</span></a>
+          </h1>
+          <p>In certain cases, you might need to retrieve data from an external API and integrate it into your app.
+            Below are some simple examples to demonstrate how to accomplish this. Keep in mind that in real-world
+            projects, you may need to handle section hiding and display a preloader during the API call.</p>
+          <h2 id="fetch-app">
+            <a href="#fetch-app" data-id="fetch-app" class="anchor"><span>On app opening</span></a>
+          </h2>
+          <p>If you want to fetch data when the application starts, you can achieve this by writing traditional
+            JavaScript code at the bottom of the <code>app.js</code> file. This code will execute immediately after the
+            app initialization.</pre>
+          </p>
+          <pre v-pre=""
+            data-lang="javascript"><code class="lang-javascript"><span class="token comment">// Let's call our API using the fetch function</span>
+<span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"https://jsonplaceholder.typicode.com/posts/1"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">json</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// When the response is received, we can use Framework7 functions to add our data to the DOM</span>
+    <span class="token comment">// You can also use vanilla Javascript if you prefer</span>
+    <span class="token function">$$</span><span class="token punctuation">(</span><span class="token string">'#card-id h2'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">$$</span><span class="token punctuation">(</span><span class="token string">'#card-id .card-category'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+          <h2 id="fetch-page">
+            <a href="#fetch-page" data-id="fetch-page" class="anchor"><span>On a specific page</span></a>
+          </h2>
+          <p>If you need to fetch data (or execute any code) when a specific page is opened — for example the single
+            page — you first have to add a unique name to that page. Let's add a data-name attribute at the top of
+            <code>pages/pages/single.html</code>:
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span> <span class="token attr-name">data-name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>single<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+
+          <p>Then, to execute some code (in our case an API call) when the user opens this page, you can use the page:init event like the exemple below:
+          </p>
+
+          <pre v-pre=""
+            data-lang="javascript"><code class="lang-javascript"><span class="token comment">// We use the page:init event to trigger our function when a new page is opened</span>
+<span class="token comment">// We use '.page[data-name="single"]' parameter to target the specific page</span>
+            
+<span class="token function">$$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"page:init"</span><span class="token punctuation">,</span> <span class="token string">'.page[data-name="single"]'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">page</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// We can call our API using fetch function</span>
+  <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"https://jsonplaceholder.typicode.com/posts/1"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">json</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// We can finally add our data to the page</span>
+      <span class="token function">$$</span><span class="token punctuation">(</span><span class="token string">'.single-post-title'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">$$</span><span class="token punctuation">(</span><span class="token string">'.single-post-content'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+          <h1 id="possible-uses">
+            <a href="#possible-uses" data-id="possible-uses" class="anchor"><span>Use cases</span></a>
+          </h1>
+          <p>Now that you have set up and customized your app, here are some examples of what you can do with it.</p>
+          <h2 id="mobile-website">
+            <a href="#mobile-website" data-id="mobile-website" class="anchor"><span>Mobile website</span></a>
+          </h2>
+          <p>
+            You can use this template as a mobile-friendly version of your website. For example, create a subdomain of
+            your website where you host your mobile app, like
+            <strong>mobile.yourblog.com</strong>
+            .
+          </p>
+          <p>And then redirect all mobile traffic to that subdomain.</p>
+          <h2 id="pwa">
+            <a href="#pwa" data-id="pwa" class="anchor"><span>PWA</span></a>
+          </h2>
+          <p>You can also use the template as a Progressive Web App (PWA). Yui is PWA ready and even optimized for it.
+          </p>
+          <p class="warn">Note that this section is just a quick introduction to PWAs. So if you want to create a
+            complete PWA (with service workers etc.) I suggest you to follow a complete tutorial.</p>
+          <p><strong>1. Create the manifest.json</strong></p>
+          <p>
+            First, create a new
+            <code>manifest.json</code>
+            file and add this content:
+          </p>
+          <pre v-pre="" data-lang="json"><code class="lang-json">{
+  "short_name": "Yui",
+  "name": "Yui",
+  "icons": [
+    {
+      "src": "img/icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "theme_color": "#ffffff"
+}</code></pre>
+          <p>
+            You can change the
+            <code>short_name</code>
+            and
+            <code>name</code>
+            values by the name of your app. Note that
+            <code>short_name</code>
+            is the name that will be displayed on the user's home screen.
+          </p>
+          <p>
+            If you use Dark Theme, you can replace the background_color and theme_color values by
+            <code>#001119</code>
+            .
+          </p>
+          <p>Now save the file in the template folder.</p>
+          <p>
+            (You can find all the documentation about manifest.json
+            <a href="https://developers.google.com/web/fundamentals/web-app-manifest" target="_blank"
+              rel="noopener">here</a>
+            )
+          </p>
+          <p><strong>2. Link the manifest.json to the index.html</strong></p>
+          <p>
+            In
+            <code>index.html</code>
+            , in the
+            <code>&lt;head&gt;</code>
+            section, add this code:
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>manifest<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>manifest.json<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p><strong>3. Create the icons</strong></p>
+          <p>You need to create 3 icons, 2 for Chrome, and one for iOS.</p>
+          <ul>
+            <li>
+              A
+              <code>icon_180.png</code>
+              icon, with a size of 180*180px.
+            </li>
+            <li>
+              A
+              <code>icon_192.png</code>
+              icon, with a size of 192*192px.
+            </li>
+            <li>
+              A
+              <code>icon_512.png</code>
+              icon, with a size of 512*512px.
+            </li>
+          </ul>
+          <p>
+            You can add these 3 icons to the
+            <code>img</code>
+            folder.
+          </p>
+          <p>
+            For the icon to be taken into account by iOS Safari, you must add this line in the
+            <code>&lt;head&gt;</code>
+            of
+            <code>index.html</code>
+            :
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apple-touch-icon<span class="token punctuation">"</span></span> <span class="token attr-name">sizes</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>180x180<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img/icon_180.png<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p><strong>3. Change the status bar color on iOS</strong></p>
+          <p>
+            If you use the Dark Theme, you don't need to do this step. But if you use the default light theme, you
+            should add this code in the
+            <code>&lt;head&gt;</code>
+            of
+            <code>index.html</code>
+            to get a white status bar:
+          </p>
+          <pre v-pre=""
+            data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apple-mobile-web-app-status-bar-style<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+          <p><strong>4. Test your app</strong></p>
+          <p>Open your app URL with Safari on iOS. At the bottom, click on the options button, and click on "Add to Home
+            Screen". Now you should be able to open and navigate your application in full screen mode.</p>
+          <h2 id="native-app-cordova">
+            <a href="#native-app-cordova" data-id="native-app-cordova" class="anchor"><span>Native App
+                (Cordova)</span></a>
+          </h2>
+          <p>Yui is fully compatible with Apache Cordova. Cordova is a simple way to create an iOS or Android
+            application from an HTML/CSS/JS template.</p>
+          <p>I recommend you to follow a complete Cordova tutorial in order to build your application properly.</p>
+          <h1 id="whats-next-">
+            <a href="#whats-next-" data-id="whats-next-" class="anchor"><span>What’s next ?</span></a>
+          </h1>
+          <p>Thank you for purchasing Yui!</p>
+          <h2 id="support">
+            <a href="#support" data-id="support" class="anchor"><span>Support</span></a>
+          </h2>
+          <p>
+            If you are facing any difficulties with this template, do not hesitate to contact me via my Envato Profile
+            <a href="https://themeforest.net/user/xioyuna" target="_blank" rel="noopener">here</a>
+            . I will answer you as soon as possible.
+          </p>
+          <p>Also, if you have any suggestions or ideas for improvement, feel free to send me a message.</p>
+          <h2 id="leave-review">
+            <a href="#leave-review" data-id="leave-review" class="anchor"><span>Leave a Review</span></a>
+          </h2>
+          <p>If you like this template, I would greatly appreciate it if you could leave a review on ThemeForest. Your
+            feedback encourages me to enhance and update my products. Thank you!</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
